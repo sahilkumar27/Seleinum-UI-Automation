@@ -1,0 +1,1 @@
+{"uuid":"d94463bb-0485-4afc-aed8-41f3a7b6a349","name":"Google_UI_Auto.WindowHandler","children":["363b1eae-963c-4b97-aad6-321a8a69be05"],"befores":[{"name":"setDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1697971005145,"stop":1697971011580}],"afters":[],"start":1697971005063,"stop":1697971029646}
