@@ -1,4 +1,4 @@
-package Google_UI_Auto;
+package Tests.Google_UI_Auto;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Severity;

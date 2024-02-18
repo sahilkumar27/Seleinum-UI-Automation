@@ -1,33 +1,22 @@
-package Google_UI_Auto;
+package Tests.Google_UI_Auto;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class LoginTest2 {
+public class LoginTest {
 
-    public static String browser = "Chrome";  //External configuration - XLS, CSV
     public WebDriver driver;
     @BeforeClass
     public void setUp() {
+        WebDriverManager.chromedriver();
 
-        if (browser.equals("Firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        } else if (browser.equals("Chrome")) {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        } else if (browser.equals("Edge")) {
-            WebDriverManager.edgedriver();
-            driver = new EdgeDriver();
-
-        }
+        // Initialize ChromeDriver and open the browser
+        driver = new ChromeDriver();
     }
 
     @Test
