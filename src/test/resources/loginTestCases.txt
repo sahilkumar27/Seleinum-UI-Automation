@@ -1,0 +1,31 @@
+TC_ID	Module	Scenario	Test Case Description	Expected Result	Actual Result
+TC_001	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123	Successfully login to the application and navigate to dashboard page	
+TC_002	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123	Successfully login to the application and navigate to dashboard page	
+TC_003	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456	Successfully login to the application and navigate to dashboard page	
+TC_004	Login	Negative Login	Login with invalid username and valid password	Display error message indicating invalid credentials	
+TC_005	Login	Negative Login	Login with valid username and invalid password	Display error message indicating invalid credentials	
+TC_006	Login	Negative Login	Login with invalid username and invalid password	Display error message indicating invalid credentials	
+TC_007	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter OTP 999999	Successfully login to the application and navigate to dashboard page	
+TC_008	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter OTP 999999	Successfully login to the application and navigate to dashboard page	
+TC_009	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter OTP 999999	Successfully login to the application and navigate to dashboard page	
+TC_010	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter invalid OTP	Display error message indicating invalid OTP	
+TC_011	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter invalid OTP	Display error message indicating invalid OTP	
+TC_012	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter invalid OTP	Display error message indicating invalid OTP	
+TC_013	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter blank OTP	Display error message indicating invalid OTP	
+TC_014	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter blank OTP	Display error message indicating invalid OTP	
+TC_015	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter blank OTP	Display error message indicating invalid OTP	
+TC_016	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter special characters in OTP	Display error message indicating invalid OTP	
+TC_017	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter special characters in OTP	Display error message indicating invalid OTP	
+TC_018	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter special characters in OTP	Display error message indicating invalid OTP	
+TC_019	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter numeric OTP with less than 6 digits	Display error message indicating invalid OTP	
+TC_020	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter numeric OTP with less than 6 digits	Display error message indicating invalid OTP	
+TC_021	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter numeric OTP with less than 6 digits	Display error message indicating invalid OTP	
+TC_022	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter numeric OTP with more than 6 digits	Display error message indicating invalid OTP	
+TC_023	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter numeric OTP with more than 6 digits	Display error message indicating invalid OTP	
+TC_024	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter numeric OTP with more than 6 digits	Display error message indicating invalid OTP	
+TC_025	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter alphanumeric OTP	Display error message indicating invalid OTP	
+TC_026	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter alphanumeric OTP	Display error message indicating invalid OTP	
+TC_027	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter alphanumeric OTP	Display error message indicating invalid OTP	
+TC_028	Login	Positive Login	Login with valid credentials SAHIL-CRED and Password@123, then enter OTP with spaces	Display error message indicating invalid OTP	
+TC_029	Login	Positive Login	Login with valid credentials TESTUSER1 and TestPass@123, then enter OTP with spaces	Display error message indicating invalid OTP	
+TC_030	Login	Positive Login	Login with valid credentials TESTUSER2 and TestPass@456, then enter OTP with spaces	Display error message indicating invalid OTP	
